@@ -66,7 +66,7 @@ secondTimeLine.to(".header", {
     delay: 0,
 })
     .fromTo(".left-mountain", {
-        y: 0
+        y: 200
     }, {
         y: -220,
         duration: 1,
@@ -75,16 +75,16 @@ secondTimeLine.to(".header", {
         offset: 0
     }, 0)
     .fromTo(".middle-mountain", {
-        y: 0
+        y: 200
     }, {
-        y: -100,
+        y: -200,
         duration: 1,
         ease: "power1.inOut",
         delay: 0,
         offset: 0
     }, 0)
     .fromTo(".right-mountain", {
-        y: 700
+        y: 200
     }, {
         y: -200,
         duration: 1,
@@ -196,6 +196,27 @@ cloudTimeLine.to(".cloud-right", {
         offset: 0
     }, 0)
 
+var theEventTimeline = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".container",
+        start: "500px 100px",
+        toggleActions: "play none none reverse", // Play the animation when entering, reverse it when leaving
+        markers: true
+    }
+});
+
+theEventTimeline.fromTo(".the-event", {
+    opacity: 0,
+    y: 500
+}, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power1.inOut",
+    delay: 0,
+    offset: 0
+}, 0)
+
 mountainTimeLine.to(".left-mountain", {
     y: -370,
     duration: 1,
@@ -227,6 +248,24 @@ mountainTimeLine.to(".left-mountain", {
 
 // _________FOURTH GSAP SECTION___________
 // Create a GSAP 4th timeline
+var theEventTimeLine = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".container",
+        start: "1000px 100px",
+        toggleActions: "play none none reverse",
+        markers: true
+    }
+});
+
+theEventTimeLine.to(".the-event", {
+    y: -370,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.inOut",
+    delay: 0,
+    offset: 0
+})
+
 var fourthTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
@@ -235,11 +274,11 @@ var fourthTimeLine = gsap.timeline({
     }
 });
 
-fourthTimeLine.to(".the-event", {
-    y: -370,
-    opacity: 0,
-    duration: 1,
-    ease: "power1.inOut",
-    delay: 0,
-    offset: 0
-})
+// fourthTimeLine.to(".the-event", {
+//     y: -370,
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power1.inOut",
+//     delay: 0,
+//     offset: 0
+// })
