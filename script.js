@@ -251,7 +251,7 @@ mountainTimeLine.to(".left-mountain", {
 var theEventTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
-        start: "1000px 100px",
+        start: "1050px 100px",
         toggleActions: "play none none reverse",
         markers: true
     }
@@ -266,13 +266,13 @@ theEventTimeLine.to(".the-event", {
     offset: 0
 })
 
-var fourthTimeLine = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".container",
-        start: "1000px 100px",
-        markers: true
-    }
-});
+// var fourthTimeLine = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".container",
+//         start: "1000px 100px",
+//         markers: true
+//     }
+// });
 
 // fourthTimeLine.to(".the-event", {
 //     y: -370,
