@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --playfair: 'Playfair Display', serif;
+    --helvetica: 'Helvetica Neue', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    font-family: var(--playfair);
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;/* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Enable mandatory scroll snapping along the vertical axis */
+}
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    scroll-snap-align: start; /* Ensure each section snaps to the start of the viewport */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    font-weight: 500;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar .logo {
+    margin-right: auto;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar ul {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar ul li p {
+    margin-left: 2rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-weight: 800;
+}
+
+.bi-search {
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    z-index: 4;
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 5rem;
+    letter-spacing: .5rem;
+}
+
+.header p {
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 1.5rem;
+    padding-top: 1.5rem;
+    font-family: var(--helvetica);
+}
+
+.horizon-text {
+    position: absolute;
+    color: #fff;
+    width: 20rem;
+    top: 20rem;
+    /* left: 10rem; */
+    left: 10%;
+    z-index: 2;
+}
+
+.horizon-text h1 {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+}
+
+.horizon-text p {
+    font: var(--helvetica);
+    padding-top: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: -5rem;
+    left: -5rem; /* Adjust positioning to cover any potential overflow */
+    width: calc(100% + 10rem); /* Adjust width to cover potential overflow */
+    height: calc(100% + 10rem); /* Adjust height to cover potential overflow */
+    background: url('./assets/layer-6.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    transform-origin: center;
+}
+
+.balloon {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    bottom: 5rem;
+    z-index: 3;
+}
+
+.left-mountain {
+    position: absolute;
+    top: 25rem;
+    z-index: 2;
+}
+
+.middle-mountain {
+    position: absolute;
+    top: 15rem;
+    z-index: 3;
+}
+
+.cloud-left {
+    position: absolute;
+    top: 15rem;
+    z-index: 3;
+}
+
+.cloud-right {
+    position: absolute;
+    top: 15rem;
+    z-index: 3;
+}
+
+.right-mountain{
+    position: absolute;
+    top: 30rem;
+    z-index: 1;
+}
+
+/* 2nd section */
+.the-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25%;
+}
+
+.the-event h1:first-child {
+    font-size: 12rem;
+    font-weight: 800;
+}
+
+.the-event h1:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+.first-p {
+    text-align: center;
+    font-family: var(--helvetica);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.second-p {
+    text-align: center;
+    font-family: var(--helvetica);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.the-event a {
+    color: white;
+    background-color: black;
+    padding: 1rem 2.5rem;
+    border: 1px solid white;
+    font-weight: 800;
+}
+
+.the-event a:hover  {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: 900;
+}
+
+
+
+
+
+
