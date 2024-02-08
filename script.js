@@ -77,7 +77,7 @@ secondTimeLine.to(".header", {
     .fromTo(".middle-mountain", {
         y: 200
     }, {
-        y: -200,
+        y: -20,
         duration: 1,
         ease: "power1.inOut",
         delay: 0,
@@ -86,7 +86,7 @@ secondTimeLine.to(".header", {
     .fromTo(".right-mountain", {
         y: 200
     }, {
-        y: -200,
+        y: 200,
         duration: 1,
         ease: "power1.inOut",
         delay: 0,
@@ -104,9 +104,11 @@ secondTimeLine.to(".header", {
         transformOrigin: "0% 100%",
     }, 0)
     .fromTo(".balloon", {
-        y: 0
+        y: 0,
+        scale: 1
     }, {
-        y: -220,
+        y: -200,
+        scale: 1.2, // Ending scale (1.5 times bigger)
         duration: 1,
         ease: "power1.inOut",
         delay: 0,
@@ -303,3 +305,62 @@ carouselReverseTimeLine.to(".carousel-section", {
     delay: 0,
     offset: 0
 })
+
+var lastTimeLine = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".container",
+        start: "2300px 100px",
+        toggleActions: "play none none reverse",
+        markers: true
+    }
+});
+
+lastTimeLine.fromTo(".hello", {
+    scaleY: 0
+}, {
+    scaleY: 1,
+    duration: 1,
+    ease: "power1.inOut",
+    delay: 0,
+    transformOrigin: "0% 100%",
+})
+    .fromTo(".last-section-p", {
+        opacity: 0,
+    }, {
+        opacity: 1,
+        duration: 2,
+        ease: "power1.inOut",
+        delay: 0,
+        transformOrigin: "0% 100%",
+    }, 0)
+    .fromTo(".last-image", {
+        y: 200,
+        opacity: 0,
+    }, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power1.inOut",
+        delay: 0,
+        transformOrigin: "0% 100%",
+    }, 0)
+    .fromTo(".notified", {
+        x: 200,
+        opacity: 0,
+    }, {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power1.inOut",
+        delay: 0,
+        transformOrigin: "0% 100%",
+    }, 0)
+    .fromTo(".all", {
+        opacity: 0,
+    }, {
+        opacity: 1,
+        duration: 2.5,
+        ease: "power1.inOut",
+        delay: 0,
+        transformOrigin: "0% 100%",
+    }, 0)
