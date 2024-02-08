@@ -5,9 +5,10 @@ gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".container", // Trigger when the .header element enters the viewport
-        start: "0 100px", // Start position for the 1st timeline
+        start: "1px 100px", // Start position for the 1st timeline
         // start: "120px 100px",
-        markers: true // Add markers for debugging
+        toggleActions: "play none none reverse",
+        markers: false // Add markers for debugging
     }
 });
 
@@ -55,7 +56,8 @@ var secondTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
         start: "140px 100px",
-        markers: true
+        toggleActions: "play none none reverse",
+        markers: false
     }
 });
 
@@ -139,7 +141,8 @@ var mountainTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
         start: "400px 100px",
-        markers: true
+        toggleActions: "play none none reverse",
+        markers: false
     }
 });
 
@@ -147,7 +150,7 @@ var cloudTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
         start: "500px 100px",
-        markers: true
+        markers: false
     }
 });
 
@@ -160,6 +163,27 @@ cloudTimeLine.to(".cloud-right", {
 })
     .to(".cloud-left", {
         y: -370,
+        duration: 1,
+        ease: "power1.inOut",
+        delay: 0,
+        offset: 0
+    }, 0)
+    .to(".navbar", {
+        borderBottomColor: "black",
+        duration: 1,
+        ease: "power1.inOut",
+        delay: 0,
+        offset: 0
+    }, 0)
+    .to(".vertical-line-left", {
+        borderColor: "black",
+        duration: 1,
+        ease: "power1.inOut",
+        delay: 0,
+        offset: 0
+    }, 0)
+    .to(".vertical-line-right", {
+        borderColor: "black",
         duration: 1,
         ease: "power1.inOut",
         delay: 0,
@@ -241,7 +265,7 @@ mountainTimeLine.to(".left-mountain", {
         offset: 0
     }, 0)
     .to(".horizon-text", {
-        y: -370,
+        y: -570,
         duration: 1,
         ease: "power1.inOut",
         delay: 0,
@@ -255,7 +279,7 @@ var theEventTimeLine = gsap.timeline({
         trigger: ".container",
         start: "1050px 100px",
         toggleActions: "play none none reverse",
-        markers: true
+        markers: false
     }
 });
 
@@ -272,7 +296,7 @@ var carouselTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
         start: "1550px 100px",
-        markers: true
+        markers: false
     }
 });
 
@@ -293,7 +317,7 @@ var carouselReverseTimeLine = gsap.timeline({
         trigger: ".container",
         start: "2200px 100px",
         toggleActions: "play none none reverse",
-        markers: true
+        markers: false
     }
 });
 
@@ -311,7 +335,7 @@ var lastTimeLine = gsap.timeline({
         trigger: ".container",
         start: "2300px 100px",
         toggleActions: "play none none reverse",
-        markers: true
+        markers: false
     }
 });
 

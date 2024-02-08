@@ -39,6 +39,24 @@ body {
     overflow-x: hidden;
 }
 
+.vertical-line-left {
+    z-index: 3;
+    position: absolute;
+    border-left: 1px solid white;
+    height: 1000px;
+    top: 5.3rem;
+    left: 2rem;
+}
+
+.vertical-line-right {
+    z-index: 3;
+    position: absolute;
+    border-left: 1px solid white;
+    height: 1000px;
+    top: 5.3rem;
+    right: 2rem;
+}
+
 .container {
     min-height: 100vh;
     width: 100%;
@@ -62,12 +80,15 @@ body {
     font-weight: 500;
     z-index: 1000;
     width: 100%;
+    border-bottom: 1px solid #fff;
 }
 
 .navbar .logo {
     margin-right: auto;
     font-size: 1.5rem;
     color: #fff;
+    letter-spacing: .5rem;
+    user-select: none;
 }
 
 .navbar ul {
@@ -162,36 +183,48 @@ body {
     height: auto;
     bottom: 5rem;
     z-index: 3;
+    max-width: 100%;
+    height: auto;
 }
 
 .left-mountain {
     position: absolute;
     top: 25rem;
     z-index: 2;
+    max-width: 100%;
+    height: auto;
 }
 
 .middle-mountain {
     position: absolute;
     top: 15rem;
     z-index: 3;
+    max-width: 100%;
+    height: auto;
 }
 
 .cloud-left {
     position: absolute;
-    top: 15rem;
+    top: 25rem;
     z-index: 3;
+    max-width: 100%;
+    height: auto;
 }
 
 .cloud-right {
     position: absolute;
-    top: 15rem;
+    top: 25rem;
     z-index: 3;
+    max-width: 100%;
+    height: auto;
 }
 
 .right-mountain{
     position: absolute;
     top: 30rem;
     z-index: 1;
+    max-width: 100%;
+    height: auto;
 }
 
 /* 2nd section */
@@ -246,11 +279,16 @@ body {
 }
 
 /* 3rd Section Carousel */
+/* .carousel-section {
+    width: 96.7%;
+    margin: 0 auto;
+} */
+
 .carousel-bg {
     position: absolute;
     top: 0;
-    left: 0;
-    min-width: 100%; 
+    left: 1.7%;
+    min-width: 96.7%; 
     min-height: 100vh;
     background: linear-gradient(to bottom, black 50%, white 50%);
     z-index: -1;
@@ -322,7 +360,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1.5rem 0 0 0;
+    padding: 1.5rem 0;
 }
 
 .social-links img {
@@ -338,6 +376,7 @@ body {
 
 .footer-logo h1 {
     font-size: 2rem;
+    user-select: none;
 }
 
 .contact-container {
@@ -368,4 +407,20 @@ body {
     font-family: var(--helvetica);
     font-weight: 300;
     font-size: 1.1rem;
+}
+
+@media (max-width: 1440px) {
+    .carousel-image {
+        flex-direction: column;
+        /* justify-content: center;
+        gap: 2rem;
+        width: 80%;
+        margin: 0 auto; */
+    }
+    
+    .carousel-image img {
+        width: 421px;
+        height: 500px;
+        object-fit: cover;
+    }
 }
