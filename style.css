@@ -42,15 +42,13 @@ body {
 .container {
     min-height: 100vh;
     width: 100%;
-    position: relative;/* Enable vertical scrolling */
-    scroll-snap-type: y mandatory; /* Enable mandatory scroll snapping along the vertical axis */
+    position: relative;
 }
 
 .section {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    scroll-snap-align: start; /* Ensure each section snaps to the start of the viewport */
 }
 
 .navbar {
@@ -202,6 +200,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 25%;
+    min-height: 80vh;
 }
 
 .the-event h1:first-child {
@@ -247,6 +246,126 @@ body {
 }
 
 /* 3rd Section Carousel */
+.carousel-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100vh;
+    background: linear-gradient(to bottom, black 50%, white 50%);
+    z-index: -1;
+}
 
+.carousel-image {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
 
+.carousel-image img {
+    width: 421px;
+    height: 500px;
+    object-fit: cover;
+}
 
+.caro-img-1 {
+    margin-top: 12rem;
+}
+.caro-img-2 {
+    margin-top: 7rem;
+}
+.caro-img-3 {
+    margin-top: 12rem;
+}
+
+.carousel-btn {
+    font-family: var(--playfair);
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    bottom: 10rem;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    z-index: 2;
+}
+
+/* 4th Section */
+.last-section .text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 22% 0 22%;
+}
+
+.text-container h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+.last-image-container {
+    margin-top: -10rem;
+}
+
+.last-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0 0 0;
+}
+
+.social-links img {
+    width: 31px;
+    height: 34px;
+}
+
+.reserved  {
+    font-weight: 300;
+    font-size: 1.1rem;
+    font-family: var(--helvetica);
+}
+
+.footer-logo h1 {
+    font-size: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container a {
+    background-color: #000;
+    text-align: center;
+    padding: .8rem 3.5rem;
+    font-family: var(--helvetica);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.contact-container a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #999999;
+}
+
+.contact {
+    padding-top: .5rem;
+}
+
+.contact span {
+    font-family: var(--helvetica);
+    font-weight: 300;
+    font-size: 1.1rem;
+}

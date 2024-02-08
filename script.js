@@ -258,7 +258,7 @@ var theEventTimeLine = gsap.timeline({
 });
 
 theEventTimeLine.to(".the-event", {
-    y: -370,
+    y: -100,
     opacity: 0,
     duration: 1,
     ease: "power1.inOut",
@@ -266,19 +266,40 @@ theEventTimeLine.to(".the-event", {
     offset: 0
 })
 
-// var fourthTimeLine = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: ".container",
-//         start: "1000px 100px",
-//         markers: true
-//     }
-// });
+var carouselTimeLine = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".container",
+        start: "1550px 100px",
+        markers: true
+    }
+});
 
-// fourthTimeLine.to(".the-event", {
-//     y: -370,
-//     opacity: 0,
-//     duration: 1,
-//     ease: "power1.inOut",
-//     delay: 0,
-//     offset: 0
-// })
+carouselTimeLine.fromTo(".carousel-bg", {
+    y: 150,
+}, {
+    y: 0,
+    duration: 1,
+    ease: "power1.inOut",
+    delay: 0,
+    offset: 0
+})
+
+// _________FIFTH GSAP SECTION___________
+// Create a GSAP 5th timeline
+var carouselReverseTimeLine = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".container",
+        start: "2200px 100px",
+        toggleActions: "play none none reverse",
+        markers: true
+    }
+});
+
+carouselReverseTimeLine.to(".carousel-section", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.inOut",
+    delay: 0,
+    offset: 0
+})
