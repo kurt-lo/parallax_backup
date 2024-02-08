@@ -8,7 +8,7 @@ var tl = gsap.timeline({
         start: "1px 100px", // Start position for the 1st timeline
         // start: "120px 100px",
         toggleActions: "play none none reverse",
-        markers: false // Add markers for debugging
+        markers: true // Add markers for debugging
     }
 });
 
@@ -57,7 +57,7 @@ var secondTimeLine = gsap.timeline({
         trigger: ".container",
         start: "140px 100px",
         toggleActions: "play none none reverse",
-        markers: false
+        markers: true
     }
 });
 
@@ -117,7 +117,7 @@ secondTimeLine.to(".header", {
         offset: 0
     }, 0)
     .fromTo(".cloud-left", {
-        y: 700,
+        y: 900,
     }, {
         y: 0,
         duration: 1,
@@ -126,7 +126,7 @@ secondTimeLine.to(".header", {
         offset: 0
     }, 0)
     .fromTo(".cloud-right", {
-        y: 700,
+        y: 900,
     }, {
         y: 0,
         duration: 1,
@@ -142,7 +142,7 @@ var mountainTimeLine = gsap.timeline({
         trigger: ".container",
         start: "400px 100px",
         toggleActions: "play none none reverse",
-        markers: false
+        markers: true
     }
 });
 
@@ -150,7 +150,8 @@ var cloudTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
         start: "500px 100px",
-        markers: false
+        toggleActions: "play none none reverse",
+        markers: true
     }
 });
 
@@ -279,7 +280,7 @@ var theEventTimeLine = gsap.timeline({
         trigger: ".container",
         start: "1050px 100px",
         toggleActions: "play none none reverse",
-        markers: false
+        markers: true
     }
 });
 
@@ -296,7 +297,7 @@ var carouselTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
         start: "1550px 100px",
-        markers: false
+        markers: true
     }
 });
 
@@ -317,7 +318,7 @@ var carouselReverseTimeLine = gsap.timeline({
         trigger: ".container",
         start: "2200px 100px",
         toggleActions: "play none none reverse",
-        markers: false
+        markers: true
     }
 });
 
@@ -335,7 +336,7 @@ var lastTimeLine = gsap.timeline({
         trigger: ".container",
         start: "2300px 100px",
         toggleActions: "play none none reverse",
-        markers: false
+        markers: true
     }
 });
 

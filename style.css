@@ -205,7 +205,7 @@ body {
 
 .cloud-left {
     position: absolute;
-    top: 25rem;
+    top: 35%;
     z-index: 3;
     max-width: 100%;
     height: auto;
@@ -213,7 +213,7 @@ body {
 
 .cloud-right {
     position: absolute;
-    top: 25rem;
+    top: 35%;
     z-index: 3;
     max-width: 100%;
     height: auto;
@@ -409,13 +409,10 @@ body {
     font-size: 1.1rem;
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
     .carousel-image {
         flex-direction: column;
-        /* justify-content: center;
-        gap: 2rem;
-        width: 80%;
-        margin: 0 auto; */
+        
     }
     
     .carousel-image img {
@@ -423,4 +420,4 @@ body {
         height: 500px;
         object-fit: cover;
     }
-}
+} */
