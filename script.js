@@ -85,15 +85,15 @@ secondTimeLine.to(".header", {
         delay: 0,
         offset: 0
     }, 0)
-    .fromTo(".right-mountain", {
-        y: 200
-    }, {
-        y: 200,
-        duration: 1,
-        ease: "power1.inOut",
-        delay: 0,
-        offset: 0
-    }, 0)
+    // .fromTo(".right-mountain", {
+    //     y: 200
+    // }, {
+    //     y: 200,
+    //     duration: 1,
+    //     ease: "power1.inOut",
+    //     delay: 0,
+    //     offset: 0
+    // }, 0)
     .fromTo(".horizon-text", {
         y: 600,
         scaleY: 0
@@ -258,13 +258,13 @@ mountainTimeLine.to(".left-mountain", {
         delay: 0,
         offset: 0
     }, 0)
-    .to(".right-mountain", {
-        y: -370,
-        duration: 1,
-        ease: "power1.inOut",
-        delay: 0,
-        offset: 0
-    }, 0)
+    // .to(".right-mountain", {
+    //     y: -370,
+    //     duration: 1,
+    //     ease: "power1.inOut",
+    //     delay: 0,
+    //     offset: 0
+    // }, 0)
     .to(".horizon-text", {
         y: -570,
         duration: 1,
