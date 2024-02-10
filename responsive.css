@@ -1,0 +1,213 @@
+@media (max-width: 1440px) {
+    .cloud-left {
+        height: 150%;
+        top: -5rem;
+    }
+
+    .cloud-right {
+        height: 150%;
+        top: -5rem;
+    }
+
+    .carousel-image img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1081px) {
+    .cloud-left {
+        height: 160%;
+        top: -8rem;
+    }
+
+    .cloud-right {
+        height: 160%;
+        top: -8rem;
+    }
+}
+
+@media (max-width: 641px) {
+    .balloon {
+        bottom: 0;
+    }
+
+    .left-mountain {
+        height: 65%;
+    }
+
+    .middle-mountain {
+        top: 30rem;
+        height: 65%;
+    }
+
+    .cloud-left {
+        height: 160%;
+        top: -10rem;
+    }
+
+    .cloud-right {
+        height: 160%;
+        top: -10rem;
+    }
+
+    .the-event {
+        padding-bottom: 2rem;
+    }
+
+    /* CAROUSEL SECTION */
+    .carousel-bg {
+        min-width: 90%;
+        min-height: 60vh;
+    }
+
+    .carousel-image {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-image img {
+        width: 150px;
+        height: 220px;
+    }
+
+    .caro-img-1 {
+        margin-top: 10rem;
+    }
+
+    .caro-img-2 {
+        margin-top: 0;
+    }
+
+    .caro-img-3 {
+        margin-top: 10rem;
+    }
+
+    .carousel-btn {
+        bottom: 25rem;
+    }
+
+}
+
+@media (max-width: 376px) {
+    /* html {
+        font-size: 70%;
+    } */
+
+    .navbar ul {
+        display: none;
+    }
+
+    .header {
+        padding-top: 6rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        letter-spacing: .5rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+        letter-spacing: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .image-container {
+        height: 80vh;
+    }
+
+    .balloon {
+        width: 200px;
+        height: 200px;
+        bottom: 5rem;
+    }
+
+    .left-mountain {
+        top: 20rem;
+        height: 60%;
+    }
+
+    .middle-mountain {
+        top: 20rem;
+        height: 60%;
+    }
+
+    .cloud-left {
+        height: 160%;
+        top: -1rem;
+    }
+
+    .cloud-right {
+        height: 160%;
+        top: -1rem;
+    }
+
+    .horizon-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .horizon-text p {
+        font-size: .8rem;
+    }
+
+    /* THE EVENT SECTION */
+    .the-event {
+        padding: 0 2.2rem;
+    }
+
+    .the-event h1:first-child {
+        font-size: 5rem;
+    }
+
+    .the-event h1:nth-child(2) {
+        font-size: 1.2rem;
+        padding-bottom: .5rem;
+    }
+
+    .first-p,
+    .second-p {
+        font-size: .8rem;
+        padding-bottom: .5rem;
+    }
+
+    .the-event a {
+        font-size: .8rem;
+        padding: .6rem 2rem;
+    }
+
+    /* CAROUSEL SECTION */
+    .carousel-bg {
+        min-width: 83%;
+        /* left: 8.3%; */
+    }
+
+    .carousel-image {
+        justify-content: center;
+        align-items: center;
+        gap: .2rem;
+    }
+
+    .carousel-image img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .caro-img-1 {
+        margin-top: 12rem;
+    }
+
+    .caro-img-2 {
+        margin-top: 0;
+    }
+
+    .caro-img-3 {
+        margin-top: 12rem;
+    }
+
+    .carousel-btn {
+        bottom: 20rem;
+    }
+
+}

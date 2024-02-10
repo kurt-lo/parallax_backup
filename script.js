@@ -6,7 +6,6 @@ var tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".container", // Trigger when the .header element enters the viewport
         start: "1px 100px", // Start position for the 1st timeline
-        // start: "120px 100px",
         toggleActions: "play none none reverse",
         markers: true // Add markers for debugging
     }
@@ -55,7 +54,8 @@ tl.fromTo(".header", {
 var secondTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
-        start: "140px 100px",
+        // start: "140px 100px",
+        start: "4% 100px",
         toggleActions: "play none none reverse",
         markers: true
     }
@@ -67,14 +67,12 @@ secondTimeLine.to(".header", {
     ease: "power1.inOut",
     delay: 0,
 })
-    .fromTo(".left-mountain", {
-        y: 200
-    }, {
-        y: -220,
+    .to(".left-mountain", {
+        y: -50,
         duration: 1,
         ease: "power1.inOut",
         delay: 0,
-        offset: 0
+        offset: 0,
     }, 0)
     .fromTo(".middle-mountain", {
         y: 200
@@ -149,7 +147,7 @@ var mountainTimeLine = gsap.timeline({
 var cloudTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
-        start: "500px 100px",
+        start: "400px 100px",
         toggleActions: "play none none reverse",
         markers: true
     }
@@ -211,46 +209,21 @@ cloudTimeLine.to(".cloud-right", {
         delay: 0,
         offset: 0
     }, 0)
-    .fromTo(".the-event", {
-        opacity: 0,
-        y: 500
-    }, {
-        opacity: 1,
-        y: 0,
+    // .to(".the-event", {
+    //     opacity: 1,
+    //     y: 0,
+    //     duration: 1,
+    //     ease: "power1.inOut",
+    //     delay: 0,
+    //     offset: 0
+    // }, 0)
+    .to(".left-mountain", {
+        y: -370,
         duration: 1,
         ease: "power1.inOut",
         delay: 0,
         offset: 0
     }, 0)
-
-var theEventTimeline = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".container",
-        start: "500px 100px",
-        toggleActions: "play none none reverse", // Play the animation when entering, reverse it when leaving
-        markers: true
-    }
-});
-
-theEventTimeline.fromTo(".the-event", {
-    opacity: 0,
-    y: 500
-}, {
-    opacity: 1,
-    y: 0,
-    duration: 1,
-    ease: "power1.inOut",
-    delay: 0,
-    offset: 0
-}, 0)
-
-mountainTimeLine.to(".left-mountain", {
-    y: -370,
-    duration: 1,
-    ease: "power1.inOut",
-    delay: 0,
-    offset: 0
-})
     .to(".middle-mountain", {
         y: -370,
         duration: 1,
@@ -272,6 +245,27 @@ mountainTimeLine.to(".left-mountain", {
         delay: 0,
         offset: 0
     }, 0)
+
+var theEventTimeline = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".container",
+        start: "500px 100px",
+        toggleActions: "play none none reverse", // Play the animation when entering, reverse it when leaving
+        markers: true
+    }
+});
+
+theEventTimeline.fromTo(".the-event", {
+    opacity: 0,
+    y: 500
+}, {
+    opacity: 1,
+    y: 0,
+    duration: 2,
+    ease: "power1.inOut",
+    delay: 0,
+    offset: 0
+}, 0)
 
 // _________FOURTH GSAP SECTION___________
 // Create a GSAP 4th timeline
@@ -353,7 +347,7 @@ lastTimeLine.fromTo(".hello", {
         opacity: 0,
     }, {
         opacity: 1,
-        duration: 2,
+        duration: 1,
         ease: "power1.inOut",
         delay: 0,
         transformOrigin: "0% 100%",
