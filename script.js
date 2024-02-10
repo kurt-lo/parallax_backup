@@ -328,7 +328,7 @@ carouselReverseTimeLine.to(".carousel-section", {
 var lastTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
-        start: "2300px 100px",
+        start: "2200px 100px",
         toggleActions: "play none none reverse",
         markers: true
     }
@@ -364,7 +364,7 @@ lastTimeLine.fromTo(".hello", {
         transformOrigin: "0% 100%",
     }, 0)
     .fromTo(".notified", {
-        x: 200,
+        x: 20,
         opacity: 0,
     }, {
         x: 0,
