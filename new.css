@@ -21,7 +21,7 @@ html {
     position: relative;
     overflow-y: scroll;
     overflow-x: hidden;
-    scroll-padding-top: 250px;
+    scroll-padding-top: 150px;
     scroll-snap-type: y mandatory;
 }
 
@@ -178,9 +178,10 @@ body {
 .background {
     position: absolute;
     top: -5rem;
-    left: 0;
-    width: 100%;
-    /* width: calc(100% + 2rem); */
+    /* left: 0;
+    width: 100%; */
+    left: -1.5rem;
+    width: calc(100% + 1.5rem);
     height: calc(100% + 5rem);
     background: url('./assets/layer-6.png') no-repeat;
     background-size: cover;

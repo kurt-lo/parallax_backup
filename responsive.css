@@ -100,18 +100,18 @@
     }
 
     .header {
-        padding-top: 6rem;
+        padding-top: 10rem;
     }
 
     .header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         letter-spacing: .5rem;
     }
 
     .header p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         letter-spacing: 1.5rem;
-        padding-top: 1rem;
+        padding: 1rem 1rem 0 1rem;
     }
 
     .image-container {
@@ -119,9 +119,9 @@
     }
 
     .balloon {
-        width: 200px;
-        height: 200px;
-        bottom: 5rem;
+        width: 300px;
+        height: 300px;
+        bottom: 40vh;
     }
 
     .left-mountain {
@@ -136,12 +136,12 @@
 
     .cloud-left {
         height: 160%;
-        top: -1rem;
+        top: -80vh;
     }
 
     .cloud-right {
         height: 160%;
-        top: -1rem;
+        top: -80vh;
     }
 
     .horizon-text h1 {
@@ -195,7 +195,7 @@
     }
 
     .caro-img-1 {
-        margin-top: 12rem;
+        margin-top: 5rem;
     }
 
     .caro-img-2 {
@@ -203,11 +203,11 @@
     }
 
     .caro-img-3 {
-        margin-top: 12rem;
+        margin-top: 5rem;
     }
 
     .carousel-btn {
-        bottom: 20rem;
+        bottom: 15rem;
     }
 
     /* FOOTER SECTION */
@@ -256,5 +256,15 @@
 
     .contact span {
         font-size: .8rem;
+    }
+}
+
+@media (max-height: 1080px) {
+    .left-mountain {
+        /* top: 50%; */
+    }
+
+    .middle-mountain {
+        /* top: 50%; */
     }
 }
