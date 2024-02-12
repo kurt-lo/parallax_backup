@@ -28,7 +28,7 @@
     }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 801px) {
     .balloon {
         bottom: 0;
     }
@@ -44,12 +44,12 @@
 
     .cloud-left {
         height: 160%;
-        top: -10rem;
+        top: -8rem;
     }
 
     .cloud-right {
         height: 160%;
-        top: -10rem;
+        top: -8rem;
     }
 
     .the-event {
@@ -90,7 +90,7 @@
 
 }
 
-@media (max-width: 376px) {
+@media (max-width: 506px) {
     /* html {
         font-size: 70%;
     } */
