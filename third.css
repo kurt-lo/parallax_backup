@@ -21,8 +21,8 @@ html {
     position: relative;
     overflow-y: scroll;
     overflow-x: hidden;
-    scroll-padding-top: 150px;
-    scroll-snap-type: y mandatory;
+    /* scroll-padding-top: 10%; */
+    /* scroll-snap-type: y mandatory; */
 }
 
 img {
@@ -38,7 +38,7 @@ body {
 .the-event,
 .carousel-section,
 .last-section {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     width: 100%;
     max-width: 100%;
 }
@@ -46,7 +46,7 @@ body {
 .vertical-line-left {
     z-index: 3;
     position: absolute;
-    border-left: 1px solid white;
+    border-left: 1px solid red;
     height: 100vh;
     top: 5.3rem;
     left: 2rem;
@@ -55,7 +55,7 @@ body {
 .vertical-line-right {
     z-index: 3;
     position: absolute;
-    border-left: 1px solid white;
+    border-left: 1px solid red;
     height: 100vh;
     top: 5.3rem;
     right: 2rem;
@@ -133,7 +133,7 @@ body {
 
 .header p {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 1.5rem;
     padding-top: 1.5rem;
     font-family: var(--helvetica);
@@ -142,14 +142,16 @@ body {
 .second-section {
     position: relative;
     z-index: 1;
-    max-height: 100vh;
+    height: 60vh;
+    max-height: 60vh;
 }
 
 .horizon-text {
     position: absolute;
     color: #fff;
     width: 20rem;
-    top: 20rem;
+    bottom: 0;
+    top: 0;
     left: 10%;
     z-index: 2;
 }
@@ -170,16 +172,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
+    max-height: 180vh;
     z-index: 0;
-    /* overflow: hidden; */
 }
 
 .background {
     position: absolute;
     top: -5rem;
-    /* left: 0;
-    width: 100%; */
     left: -3rem;
     width: calc(100% + 3rem);
     height: calc(100% + 5rem);
@@ -195,55 +195,57 @@ body {
     position: absolute;
     width: 450px;
     height: auto;
-    bottom: 40%;
     z-index: 3;
     max-width: 100%;
     height: auto;
+    bottom: 0;
+    top: -20%;
 }
 
 .left-mountain {
     position: absolute;
-    top: 25rem;
     z-index: 2;
     max-width: 100%;
+    max-height: 100%;
     height: auto;
     overflow: hidden;
+    bottom: 0;
 }
 
 .middle-mountain {
     position: absolute;
-    top: 15rem;
     z-index: 3;
     max-width: 100%;
+    max-height: 100%;
     height: auto;
     overflow: hidden;
+    bottom: 0;
 }
 
 .cloud-left {
     position: absolute;
-    top: 60%;
-    /* top: 35%; */
     z-index: 3;
     max-width: 100%;
-    height: 120%;
+    max-height: 100%;
+    bottom: 0;
 }
 
 .cloud-right {
     position: absolute;
-    top: 60%;
-    /* top: 35%; */
     z-index: 3;
     max-width: 100%;
-    height: 120%;
+    max-height: 100%;
+    bottom: 0;
 }
 
-.right-mountain {
+/* .right-mountain {
     position: absolute;
-    top: 30rem;
     z-index: 1;
     max-width: 100%;
+    max-height: 100%;
     height: auto;
-}
+    bottom: 0;
+} */
 
 /* 3rd section */
 .the-event {
@@ -310,7 +312,8 @@ body {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    min-width: 96.7%;
+    width: 96.6%;
+    max-width: 96.6%;
     height: 100vh;
     max-height: 100vh;
     background: linear-gradient(to bottom, black 50%, white 50%);
@@ -360,13 +363,13 @@ body {
 
 /* 5th Section */
 .last-section {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     max-height: 100vh;
     max-width: 100%;
-    position: relative;
 }
 
 .last-section .text-container {
@@ -384,7 +387,9 @@ body {
 }
 
 .last-image-container {
-    margin-top: -10rem;
+    width: 96.5%;
+    max-width: 96.5%;
+    margin: -10rem auto 0 auto;
 }
 
 .last-image-container img {

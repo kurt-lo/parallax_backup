@@ -6,7 +6,7 @@ var tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".container", // Trigger when the .header element enters the viewport
         start: "1px 100px", // Start position for the 1st timeline
-        toggleActions: "play none none reverse",
+        toggleActions: "restart none none reverse",
         markers: false // Add markers for debugging
     }
 });
@@ -16,7 +16,7 @@ tl.fromTo(".header", {
     scaleY: 0 // Starting state of scaleY
 }, {
     scaleY: 1, // Ending state of scaleY
-    duration: 1, // Animation duration in seconds
+    duration: 1.5, // Animation duration in seconds
     ease: "power1.inOut", // Easing function
     delay: 0, // Delay before animation starts in seconds
     transformOrigin: "0% 100%",
@@ -25,7 +25,7 @@ tl.fromTo(".header", {
         y: -500 // Starting state of translateY
     }, {
         y: -150,
-        duration: 1,
+        duration: 2,
         ease: "power1.inOut",
         delay: 0,
         offset: 0
@@ -34,7 +34,7 @@ tl.fromTo(".header", {
         y: -500
     }, {
         y: -150,
-        duration: 1,
+        duration: 2,
         ease: "power1.inOut",
         delay: 0,
         offset: 0
@@ -43,7 +43,7 @@ tl.fromTo(".header", {
         rotation: 5,
     }, {
         rotation: 0,
-        duration: 1,
+        duration: 2,
         ease: "power1.inOut",
         delay: 0,
         offset: 0
@@ -298,7 +298,7 @@ carouselTimeLine.fromTo(".carousel-bg", {
 var carouselReverseTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".container",
-        start: "2800px 100px",
+        start: "2500px 100px",
         toggleActions: "play none none reverse",
         markers: false
     }
@@ -315,8 +315,8 @@ carouselReverseTimeLine.to(".carousel-section", {
 
 var lastTimeLine = gsap.timeline({
     scrollTrigger: {
-        trigger: ".container",
-        start: "2800px 100px",
+        trigger: ".carousel-section",
+        start: "200px 100px",
         toggleActions: "play none none reverse",
         markers: false
     }

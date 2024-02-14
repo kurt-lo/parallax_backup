@@ -1,0 +1,185 @@
+@media only screen and (max-width: 1441px) {
+    .carousel-bg {
+        width: 95.6%;
+        max-width: 95.6%;
+    }
+
+    .last-image-container {
+        width: 95.6%;
+        max-width: 95.6%;
+    }
+}
+
+@media only screen and (max-width: 1201px) {
+    .carousel-bg {
+        width: 94%;
+        max-width: 94%;
+    }
+    
+    .carousel-image img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .last-image-container {
+        width: 94%;
+        max-width: 94%;
+        margin: -5rem auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .carousel-bg {
+        width: 93%;
+        max-width: 93%;
+    }
+    
+    .carousel-image img {
+        width: 250px;
+    }
+
+    .last-image-container {
+        width: 93%;
+        max-width: 93%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .carousel-bg {
+        width: 91%;
+        max-width: 91%;
+    }
+    
+    .carousel-image img {
+        width: 200px;
+    }
+
+    .last-image-container {
+        width: 91%;
+        max-width: 91%;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    html {
+        font-size: 80%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .balloon {
+        width: 50%;
+        max-width: 60%;
+        top: 20%;
+    }
+
+    .carousel-bg {
+        width: 89%;
+        max-width: 89%;
+    }
+    
+    .carousel-image img {
+        width: 150px;
+    }
+
+    .last-image-container {
+        width: 89%;
+        max-width: 89%;
+        margin: -1rem auto 0 auto;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 501px) {
+    html {
+        font-size: 70%;
+    }
+
+    .balloon {
+        top: 40%;
+    }
+
+    .the-event{
+        padding: 0 10%;
+    }
+
+    .carousel-bg {
+        width: 84%;
+        max-width: 84%;
+    }
+
+    .carousel-image {
+        gap: .5rem;
+    }
+    
+    .carousel-image img {
+        width: 100px;
+        height: 250px;
+    }
+
+    .last-section .text-container{
+        padding: 0 10%;
+    }
+
+    .text-container h1, .first-p, .second-p{
+        padding-bottom: 1rem;
+    }
+
+    .last-image-container {
+        width: 84%;
+        max-width: 84%;
+    }
+}
+
+@media only screen and (max-width: 429px) {
+    .balloon {
+        top: 50%;
+    }
+
+    .header p {
+        padding: 1.5rem 4rem 0 4rem;
+    }
+
+    .carousel-bg {
+        width: 84%;
+        max-width: 84%;
+    }
+
+    .last-image-container {
+        width: 84%;
+        max-width: 84%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .background {
+        background-size: 250%;
+    }
+    .carousel-bg {
+        width: 87.5%;
+        max-width: 87.5%;
+    }
+
+    .last-image-container {
+        width: 87.5%;
+        max-width: 87.5%;
+    }
+}
+
+
+
+
+
+
+
+
